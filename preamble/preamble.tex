@@ -10,6 +10,14 @@
 ]{biblatex}
 \addbibresource{bibliography.bib}
 
+% switch to one below for APA 
+% \usepackage[
+    % sorting=nyt,
+    % style=apa
+% ]{biblatex}
+% \addbibresource{bibliography.bib} % make bibliography.bib file -- formats are different (use google scholar)
+
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -66,7 +74,7 @@
 \declaretheoremstyle[headfont=\bfseries\sffamily, bodyfont=\normalfont, numbered=no, mdframed={ nobreak, rightline=false, topline=false, bottomline=false } ]{thmexplanationbox}
 
 
-\declaretheorem[numberwithin=chapter, style=thmgreenbox, name=Definition]{definition}
+\declaretheorem[numberwithin=chapter, style=thmredbox, name=Definition]{definition}
 \declaretheorem[sibling=definition, style=thmredbox, name=Corollary]{corollary}
 \declaretheorem[sibling=definition, style=thmredbox, name=Proposition]{proposition}
 \declaretheorem[sibling=definition, style=thmredbox, name=Theorem]{theorem}
