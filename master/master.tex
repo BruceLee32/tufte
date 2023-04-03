@@ -9,21 +9,32 @@
 \author{Kenny Chen}
 \begin{document}
     
-    \renewcommand{\thepage}{\roman{page}}
-    \maketitle
+    % \renewcommand{\thepage}{\roman{page}}
+    % \maketitle
     % \includepdf[pages=1, fitpaper=true]{./kuleuven-template/covers.pdf}
-    \thispagestyle{empty}
+    % \thispagestyle{empty}
     % \input{copyright.tex}
-    \pagestyle{plain}
-    \setcounter{page}{0}
+    % \pagestyle{plain}
+    % \setcounter{page}{0}
     % \input{preface.tex}
     % \input{summary.tex}
     % \listofsymbols
-    \tableofcontents
+    % \tableofcontents
     % \cleardoublepage
+    % \renewcommand{\thepage}{\arabic{page}}
+    % \setcounter{page}{1}
+    % \pagestyle{normal}
+
+    \renewcommand{\thepage}{\roman{page}}
+    \thispagestyle{empty}
+    \pagestyle{plain}
+    \setcounter{page}{0}
+    \tableofcontents
+    \cleardoublepage
     \renewcommand{\thepage}{\arabic{page}}
     \setcounter{page}{1}
     \pagestyle{normal}
+
     \input{../chapter1/template.tex}
     % \input{todo.tex}
     % \input{conclusion.tex}
